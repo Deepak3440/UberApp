@@ -1,0 +1,85 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background: url("./2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    overflow: hidden;
+    margin: 0; /* Remove default body margin */
+    background-color:black; 
+   
+  }
+  
+  .login-form {
+    background-color:#fff;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .login-form input[type="text"], .login-form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+  .login-form button {
+    width: 40%;
+    padding: 12px 20px;
+    background-color:black;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 8px auto 0;
+  
+
+  
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+    
+  }
+  .signup-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: red; /* You can change the color as needed */
+
+  }
+  .forLogin{
+    text-align: center;
+    color: black;
+  }
+  .signin-btn4 {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: underline;
+    
+  } 
+  .signup4:hover {
+    text-decoration: underline;
+    
+  }
+  
+  
+  

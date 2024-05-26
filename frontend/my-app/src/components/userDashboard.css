@@ -1,0 +1,266 @@
+.dashboard-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.search-block {
+  display: grid;
+  grid-template-columns: 300px 300px auto;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.search-block input[type="text"] {
+  padding: 12px 15px;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 340px;
+}
+
+.bookbutton button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 120px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 20px auto 0 auto;
+}
+
+.bookbutto button:hover {
+  background-color: #0056b3;
+}
+
+.rides-list-container {
+ 
+  padding: 25px;
+  border-radius: 15px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  margin-top: 20px;
+} 
+
+.rides-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.rides-list li {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.rides-list li:last-child {
+  border-bottom: none;
+}
+
+.rider-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 10px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+/* .rider-info:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+} */
+
+.rider-info p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.rider-info img {
+  width: 60px;
+  height: 60px;
+  margin: 10px 0;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 10px; }
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: rgb(249, 46, 46);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin: 10px auto !important;
+}
+
+.button-container button:hover {
+  background-color: #ea5776;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 20px;
+  }
+
+  .search-block {
+    flex-direction: column;
+  }
+
+  .search-block input[type="text"],
+  .search-block button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .rides-list li {
+    padding: 10px;
+  }
+
+  .rider-info {
+    padding: 10px;
+  }
+}
+
+
+.dist-auto{
+width: 100%; 
+padding: 12px 20px; /* Add some padding for spacing */
+border: 1px solid #878787;
+border-radius: 4px; /* Add rounded corners */
+box-sizing: border-box; /* Include padding in the width calculation */
+font-family: Arial, sans-serif; /* Change the font */
+}
+
+/* Style the autocomplete suggestions */
+.dist-ul {
+list-style: none; /* Remove default list styling */
+padding: 0; /* Remove default padding */
+margin: 0; /* Remove default margin */
+position: absolute; /* Keep the suggestions below the input field */
+top: 185px; /* Position the list directly below the input field */
+left: 288px; /* Align the suggestions with the left edge of the input field */
+background-color: #f0f0f0; /* Set a light grey background color for the suggestions */
+border: 1px solid #878787; /* Add a grey border to the suggestions container */
+border-radius: 4px; /* Add rounded corners to the suggestions container */
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a light shadow to the suggestions container */
+max-height: 80px; /* Set a maximum height for the suggestions list */
+overflow-y: auto; /* Add a scrollbar if the list overflows */
+animation: fadeIn 0.2s ease-in;
+width: 340px; /* Add a fade-in animation */
+}
+
+/* Style the list items (suggestions) */
+.dist-ul  li {
+padding: 12px 20px; /* Add some padding for spacing */
+border-bottom: 1px solid #ddd; /* Add a thin border between each suggestion */
+cursor: pointer; /* Let the user know the items are clickable */
+font-size: 16px; /* Increase the font size */
+}
+
+/* Highlight the selected suggestion */
+.dist-ul li:hover {
+background-color: #e0e0e0; /* Add a hover effect to the suggestions */
+}
+
+/* Animate the suggestions list */
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+
+.dist-auto2{
+  width: 100%; /* Make the input field fill the container */
+  padding: 12px 20px; /* Add some padding for spacing */
+  border: 1px solid #878787;
+  border-radius: 4px; /* Add rounded corners */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  font-family: Arial, sans-serif; /* Change the font */
+  }
+  
+  /* Style the autocomplete suggestions */
+  .dist-ul2 {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  position: absolute; /* Keep the suggestions below the input field */
+  top: 185px; /* Position the list directly below the input field */
+  left: 641px; /* Align the suggestions with the left edge of the input field */
+  background-color: #f0f0f0; /* Set a light grey background color for the suggestions */
+  border: 1px solid #878787; /* Add a grey border to the suggestions container */
+  border-radius: 4px; /* Add rounded corners to the suggestions container */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a light shadow to the suggestions container */
+  max-height: 80px; /* Set a maximum height for the suggestions list */
+  overflow-y: auto; /* Add a scrollbar if the list overflows */
+  animation: fadeIn 0.2s ease-in;
+  width: 341px; /* Add a fade-in animation */
+  }
+  
+  /* Style the list items (suggestions) */
+  .dist-ul2  li {
+  padding: 12px 20px; /* Add some padding for spacing */
+  border-bottom: 1px solid #ddd; /* Add a thin border between each suggestion */
+  cursor: pointer; /* Let the user know the items are clickable */
+  font-size: 16px; /* Increase the font size */
+  }
+  
+  /* Highlight the selected suggestion */
+  .dist-ul li:hover {
+  background-color: #e0e0e0; /* Add a hover effect to the suggestions */
+  }
+  
+  /* Animate the suggestions list */
+  @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+  }
+
+.dist-ul::-webkit-scrollbar,
+.dist-ul2::-webkit-scrollbar {
+  display: none;
+}
+  
+
+
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 100px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,111 @@
+.homepage1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Prevents scrollbar */
+}
+
+.left-section1,
+.right-section1 {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.left-section1 {
+  background: linear-gradient(to bottom, #e1dfd9, #c4dbeb);
+}
+
+.right-section1 {
+  
+}
+
+.userheading {
+  font-size: 33px;
+  color: black;
+  /* background: -webkit-linear-gradient(right, #32C766, #068932); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+  background-color: #000000;
+}
+
+em {
+  color: #000000;
+}
+
+.userText {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 18px;
+  line-height: 24px;
+  color: #050C1B;
+  font-weight: 300;
+  max-width: 415px;
+}
+
+.signin-btn1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  background: black;
+  text-decoration: none;
+  border: 1px solid #1BA94C;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 185px;
+  padding: 13px 0;
+  display: inline-block;
+}
+.signin-btn2 {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  background: white;
+  text-decoration: none;
+  border: 1px solid #1BA94C;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 185px;
+  padding: 13px 0;
+  display: inline-block;
+}
+
+.signin-btn1:hover {
+  background-color: white;
+  color: black;
+}
+
+.signin-btn2:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.create1 {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 18px;
+  line-height: 24px;
+  color: #050C1B;
+  font-weight: 300;
+  max-width: 415px;
+  margin-top: 20px;
+}
+
+.signup-link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+  color:black;
+}

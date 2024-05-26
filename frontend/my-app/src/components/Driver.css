@@ -1,0 +1,98 @@
+.login-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 30px;
+    padding-left: 30px;
+    /* background: url("./2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    overflow: hidden;
+    margin: 0; /* Remove default body margin */
+    background-color:black; 
+   
+    
+    
+  }
+  
+  .login-form2 {
+    width: 690px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:#fff;
+  }
+  
+  .login-form2 h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .form-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 60px;
+    
+  }
+  
+  .form-row2 {
+    display: contents; 
+  }
+  
+  .login-form2 label {
+    display: block;
+    margin-bottom: 8px;
+    /* font-weight: bold; */
+  }
+  
+  .login-form2 input[type="text"],
+  .login-form2 input[type="password"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  
+  .register-button1 {
+    width: 40%;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    grid-column: span 2;
+    margin: 0 auto;
+  }
+  
+  /* .register-button1:hover {
+    background-color: #0056b3;
+  } */
+  
+  .login-link {
+    text-decoration: none;
+    cursor: pointer;
+    color:black /* You can change the color as needed */
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+
+  
+  
+  @media (max-width: 768px) {
+    .form-grid {
+      grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+  
+    .register-button {
+      grid-column: span 1; /* Adjust the button to span full width on smaller screens */
+    }
+  }
+  
